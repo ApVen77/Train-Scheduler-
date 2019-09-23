@@ -1,0 +1,12 @@
+.jumbotron {
+    background-color:yellow;
+    background-image: url("https://www.thomasandfriends.com/en-us/Images/TNF-EventModule-ThomasTown-260x260_tcm1085-315505.png");
+    color: red;
+    text-align: center; 
+}
+.navbar-brand  {
+    background-color: blue;
+}
+.table table-hover {
+    background-color: gray;
+}
