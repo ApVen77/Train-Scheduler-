@@ -1,0 +1,16 @@
+.jumbotron {
+    background-color:rgb(255, 251, 38);
+    background-image: url("https://www.pbshawaii.org/wp-content/uploads/2014/11/kids_thomas_friends_640x480_ftr.jpg");
+    color:  rgb(250, 11, 11);
+    text-align: center; 
+}
+.navbar-brand  {
+    background-color: blue;
+}
+.table table-hover {
+    background-color: gray;
+}
+h2 { border: rgb(194, 191, 191) solid 1px;
+    color: blue; 
+
+}
