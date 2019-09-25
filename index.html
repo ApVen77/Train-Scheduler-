@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css"></link>
+    <title>Train Schedule</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!---Jumbotron Start--->
+    
+    <div class="jumbotron">
+        <h1 class="display-4"><strong>A Ride with Thomas and Friends!</strong> </h1>
+        <p class="lead">Let's go to Trainsville!</p>
+        <hr class="my-4">
+        <!-- <button type="submit" id="add-train" class="btn btn-success" id="addTrain">Learn More</button> -->
+    </div>
+    <!--Jumbotron End-->
+
+    <!--start table-->
+    <div class="row">
+        <div class="col-md-9">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <!-- <th scope="col">First Train Time</th> -->
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Next Train Time</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <th scope="row">Thomas the Train</th>
+                        <td>Trainsville </td>
+                        <td>20:20 </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Percy the Train</th>
+                        <td>Trainsville </td>
+                        <td>21:20 </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Gordon the Train</th>
+                        <td>Trainsville </td>
+                        <td>22:20 </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Henry the Train</th>
+                        <td>Trainsville </td>
+                        <td>23:00 </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> </th>
+                        <td colspan="2"> </td>
+                        <td> </td>
+                    </tr> -->
+                </tbody>
+            </table>
+
+
+
+        </div>
+    </div>
+    <!--End Table-->
+    <!--Form-->
+    <form>
+        <!-- Image and text -->
+        <div class="engines">
+        <div class="row">
+            <div class="col-md-9">
+                <h2>What Journey are you Taking...(Select Below!)</h2>
+                <ul> 
+                    <li>Thomas, Engine #1</li>
+                    <li>Gordan, Engine #4</li>
+                    <li>Percy, Engine #6</li>
+                    <li>Emily, Engine Soder</li>
+                </ul>
+
+
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Train Name</label>
+                    <div class="col-sm-10">
+                        <input type="Train Name:" class="form-control" id="inputTrain" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Destination</label>
+                    <div class="col-sm-10">
+                        <input type="Destination" class="form-control" id="inputDestination" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">First Train</label>
+                    <div class="col-sm-10">
+                        <input type="First Train" class="form-control" id="inputTrain1" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Frequency</label>
+                    <div class="col-sm-10">
+                        <input type="First Train" class="form-control" id="frequencyT" placeholder="">
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+                    </div>
+                </div>
+    </form>
+    </div>
+    </div>
+    </container>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+    <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</body>
+
+</html>
